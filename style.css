@@ -9,7 +9,10 @@
 }
 
 body {
-    background-color: rgb(152, 173, 201);
+    /* background-color: rgb(158, 117, 255); */
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: 50% 30%;
 }
 
 .container {
@@ -20,8 +23,8 @@ body {
 .left {
     position: relative;
     flex: 1 1 55%;
-    background-image: url("images/background.jpg");
-    background-size: cover;
+    /* background-image: url("images/background.jpg");
+    background-size: cover; */
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -89,7 +92,7 @@ body {
 .middle {
     flex:1 1 30%;
     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.199);
-    background-color: rgb(211, 230, 255);
+    background-color: rgba(211, 230, 255, 0.411);
     display:flex;
     flex-direction: column;
 }
@@ -181,10 +184,11 @@ button:active {
     font-size: .85rem;
     margin: 0;
     padding: 0;
+    color:white;
 }
 
 .bottom a {
-    color:rgb(0, 48, 136);
+    color:rgb(61, 129, 255);
     text-decoration: none;
 }
 
