@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    border: 2px solid yellow;
+}
+
+body {
+
+}
+
+.container {
+    display:flex;
+}
+
+.left {
+    flex: auto;
+    height: 100%;
+}
+
