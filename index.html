@@ -22,21 +22,22 @@
                 <p class="top-text">You <em>know</em> you want to.</p>
             </div>
             <div class="middle">
+                <p class="form-top-text">Let's do this!</p>
                 <form id="sign-up" action="#" method="post">
                     <div class="form-row">
                         <div class="form-entry">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="first-name"/>
+                            <label for="first-name">*FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" required/>
                         </div>
                         <div class="form-entry">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <label for="last-name">*LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-entry">
-                            <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email"/>
+                            <label for="email">*EMAIL</label>
+                            <input type="email" name="email" id="email" required/>
                         </div>
                         <div class="form-entry">
                             <label for="phone-number">PHONE NUMBER</label>
@@ -45,19 +46,19 @@
                     </div>
                     <div class="form-row">
                         <div class="form-entry">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password"/>
+                            <label for="password">*PASSWORD</label>
+                            <input class="error" type="password" name="password" id="password" required/>
                         </div>
                         <div class="form-entry">
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="text" name="confirm-password" id="confirm-password">
+                            <label for="confirm-password">*CONFIRM PASSWORD</label>
+                            <input class="error" type="text" name="confirm-password" id="confirm-password" required>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="bottom">
                 <button type="submit" form="sign-up">Create Account</button>
-                <p class="login-text">Already have an account? <a class=login-text" href="#">Log in</a></p>
+                <p class="login-text">Already have an account? <a class="login-text" href="#">Log in</a></p>
             </div>
         </div>
     </div>

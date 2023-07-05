@@ -9,7 +9,7 @@
 }
 
 body {
-
+    background-color: rgb(245, 245, 245);
 }
 
 .container {
@@ -52,8 +52,8 @@ body {
 
 .top {
     display: flex;
-    flex:1 1 35%;
-    width: 70%;
+    flex:1 1 35%;   
+    font-size: .9rem;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
@@ -65,17 +65,33 @@ body {
 .top-text,
 .top-text > em {
     font-size: 1.5rem;
+    width: 65%;
 }
 
 .middle {
     flex:1 1 30%;
     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.199);
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+}
+
+.form-top-text {
+    font-size: 1.1rem;
+    margin: 20px;
+    margin-left: var(--right-margin);
+    margin-bottom: 0;
+}
+
+form {
+    margin:0;
+    padding:0;
 }
 
 .form-row {
     display:flex;
     gap: 100px;
-    margin: 30px;
+    margin: 20px;
     margin-left: var(--right-margin);
 }
 
@@ -91,9 +107,67 @@ body {
 
 .form-entry > input {
     width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(212, 212, 212);
+    transition: .1s;
+}
+
+.form-entry > input:hover {
+    transform:scale(1.05);
+    border: 2px solid rgb(139, 218, 255);
+}
+
+.form-entry > input:focus{
+    outline:none;
+    border: 2px solid rgb(34, 137, 255);
+    transform: scale(1.05);
+}
+
+.form-entry > input.error {
+    border: 2px solid rgb(255, 95, 95);
 }
 
 .bottom {
     flex: 1 1 35%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: var(--right-margin);
 }
+
+.bottom > button {
+    background-color: rgb(48, 96, 187);
+    border-radius: 6px;
+    padding: 7px 25px;
+    font-size: .9rem;
+    color: white;
+    font-weight: 1000;
+    outline: none;
+    box-shadow: none;
+    border:none;
+    margin: 25px 0px;
+    transition: .1s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(18, 0, 99);
+}
+
+button:active {
+    transform:scale(.9);
+}
+
+.bottom > .login-text,
+.bottom a {
+    font-size: .85rem;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom a {
+    color:rgb(0, 48, 136);
+    text-decoration: none;
+}
+
 
