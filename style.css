@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    border-right: 3px solid rgb(0, 1, 53);
+    /* border-right: 3px solid rgba(157, 159, 255, 0.192); */
 }
 
 .photo-credit {
@@ -43,7 +43,7 @@ body {
 }
 
 .logo {
-     width: 100%;
+     width: 90%;
      height: 20%;
      position: absolute;
      top: 15%;
@@ -51,6 +51,7 @@ body {
      display:flex;
      align-items: center;
      justify-content: center;
+     border-radius: 20px;
 }
 
 .logo > a {
