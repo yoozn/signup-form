@@ -4,6 +4,8 @@
     padding: 0;
     /* border: 2px solid yellow; */
     font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    --right-margin : 50px;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
 
 .left {
     position: relative;
-    flex: 1 1 35%;
+    flex: 1 1 55%;
     background-image: url("images/background.jpg");
     background-size: cover;
     display: flex;
@@ -55,7 +57,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    margin-left: 30px;
+    margin-left: var(--right-margin);
     margin-bottom: 60px;
     gap:20px;
 }
@@ -68,6 +70,27 @@ body {
 .middle {
     flex:1 1 30%;
     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.199);
+}
+
+.form-row {
+    display:flex;
+    gap: 100px;
+    margin: 30px;
+    margin-left: var(--right-margin);
+}
+
+.form-entry {
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.form-entry > label {
+    font-size: .8rem;
+}
+
+.form-entry > input {
+    width: 100%;
 }
 
 .bottom {
