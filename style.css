@@ -6,6 +6,8 @@
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
     --right-margin : 50px;
+    --middle-right-offset: 200px;
+    --middle-left-offset: 20px;
 }
 
 body {
@@ -59,6 +61,7 @@ body {
 
 .logo-img {
     width: 20%;
+    flex: 0 0 auto;
 }
 
 .logo-img:hover {
@@ -95,12 +98,15 @@ body {
     background-color: rgba(211, 230, 255, 0.411);
     display:flex;
     flex-direction: column;
+    border-radius: 15px;
+    margin-left: var(--middle-left-offset);
+    margin-right: var(--middle-right-offset);
 }
 
 .form-top-text {
     font-size: 1.1rem;
     margin: 20px;
-    margin-left: var(--right-margin);
+    margin-left: calc( var(--right-margin) - var(--middle-left-offset));
     margin-bottom: 0;
 }
 
@@ -113,7 +119,7 @@ form {
     display:flex;
     gap: 100px;
     margin: 20px;
-    margin-left: var(--right-margin);
+    margin-left: calc( var(--right-margin) - var(--middle-left-offset));;
 }
 
 .form-entry {
